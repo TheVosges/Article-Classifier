@@ -1,27 +1,31 @@
-# Docu2
+# Article Clasiffier
+Ten projekt został wygenerowany przy użyciu [Angular CLI](https://github.com/angular/angular-cli) w wersji 17.1.0. Aplikacja umożliwia użytkownikom przewidywanie kategorii na podstawie wprowadzonego tekstu przy użyciu backendowej usługi napisanej w języku Python.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+## Serwer Deweloperski
 
-## Development server
+Uruchom polecenie `ng serve`, aby uruchomić serwer deweloperski. Przejdź pod adres `http://localhost:4200/`. Aplikacja automatycznie będzie się przeładowywać po dokonaniu zmian w plikach źródłowych.
+Następnie uruchom skrypt ./docuService/docuService.py (twój Python musi posiadać zainstalowane paczki flask, flask_cors, nltk)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Uruchamianie Testów Jednostkowych
 
-## Code scaffolding
+Uruchom polecenie `ng test`, aby uruchomić testy jednostkowe za pomocą [Karma](https://karma-runner.github.io). Użyj `ng test --code-covrage`, aby wygenerować raport pokrycia kodu.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pokrycie kodu
 
-## Build
+Pokrycie kodu testami znajduje się w katalogu `/covrage/docu2/.` i wygląda ono następująco: 
+![image](https://hackmd.io/_uploads/SJklDn5YT.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Przykłady działania
 
-## Running unit tests
+![image](https://hackmd.io/_uploads/BkS5t3cYp.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://hackmd.io/_uploads/rkBTF39Yp.png)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+
+
