@@ -10,15 +10,15 @@
 
 
     <div>
-      <label for="booleanSwitch">Switch input type:</label>
-      <mat-slide-toggle class="example-margin" [(ngModel)]="booleanSwitchValue" (change)="onSwitchChange()">Slide Toggle</mat-slide-toggle>
+      <label for="booleanSwitch">Switch input type:  </label>
+      <mat-slide-toggle class="example-margin" [(ngModel)]="booleanSwitchValue" (change)="onSwitchChange()"></mat-slide-toggle>
       <p></p>
     </div>
 
-    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    <form #myForm="ngForm">
       <div>
         <label for="textInput" [hidden]="booleanSwitchValue">Text Input:</label>
-        <input type="text" id="textInput" name="textInput" [hidden]="booleanSwitchValue">
+        <input type="text" id="textInputValue" [(ngModel)]="textInputValue" name="textInputValue" [hidden]="booleanSwitchValue">
       </div>
 
       <div>
@@ -31,12 +31,12 @@
 
     <div id="result">
       <div class="category-container">
-        <div class="category"><div class="label">Computer Science</div></div>
-        <div class="category"><div class="label">Physics</div></div>
-        <div class="category"><div class="label">Mathematics</div></div>
-        <div class="category"><div class="label">Statistics</div></div>
-        <div class="category"><div class="label">Quantitative Biology</div></div>
-        <div class="category"><div class="label">Finance</div></div>
+        <div class="category" id="cat1" [ngStyle]="{'background-color': catColorList[0]}"><div class="label">Computer Science</div></div>
+        <div class="category" id="cat2" [ngStyle]="{'background-color': catColorList[1]}"><div class="label">Physics</div></div>
+        <div class="category" id="cat3" [ngStyle]="{'background-color': catColorList[2]}"><div class="label">Mathematics</div></div>
+        <div class="category" id="cat4" [ngStyle]="{'background-color': catColorList[3]}"><div class="label">Statistics</div></div>
+        <div class="category" id="cat5" [ngStyle]="{'background-color': catColorList[4]}"><div class="label">Quantitative Biology</div></div>
+        <div class="category" id="cat6" [ngStyle]="{'background-color': catColorList[5]}"><div class="label">Finance</div></div>
       </div>
     </div>
   </div>
