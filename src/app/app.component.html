@@ -18,7 +18,7 @@
     <form #myForm="ngForm">
       <div>
         <label for="textInput" [hidden]="booleanSwitchValue">Text Input:</label>
-        <input type="text" id="textInputValue" [(ngModel)]="textInputValue" name="textInputValue" [hidden]="booleanSwitchValue">
+        <input type="text" [(ngModel)]="textInputValue" [hidden]="booleanSwitchValue">
       </div>
 
       <div>

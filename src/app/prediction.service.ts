@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PredictionService {
-  private apiUrl = 'http://localhost:5000'; // Replace with your backend server URL
+  apiUrl = 'http://localhost:5000';
 
   constructor(private http: HttpClient) { }
 

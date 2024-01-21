@@ -8,6 +8,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  title = "docu2"
+
   notActiveColor = "#3d3d3d";
   activeColor = "#2ECC71";
 
